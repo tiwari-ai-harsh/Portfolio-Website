@@ -14,7 +14,7 @@ export default function NavLink({
       href={to}
       className={`mx-4 text-3xl font-semibold  ${
         active
-          ? 'text-[rgba(255,0,255)] underline decoration-black '
+          ? 'xl:text-[rgba(255,0,255)] text-white underline decoration-black '
           : 'text-black'
       }`}
     >

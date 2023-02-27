@@ -1,6 +1,5 @@
 'use client';
 import { navItems } from '@/constants/navItems';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import NavLink from './navLink';
 
@@ -8,27 +7,22 @@ export default function NavBar() {
   const pathName = usePathname();
 
   return (
-    <div className="fixed w-fit h-[95vh] m-5 border-2 bg-white border-black shadow-[10px_10px_0px_0px_rgba(109,40,217)] ">
-      <nav className="flex flex-col p-10 text-end">
-        <div className="">
-          <div className="flex flex-row justify-end">
-            <Image
-              className="my-5 mb-10 justify-self-end border-4
-              border-black shadow-[10px_10px_0px_0px_rgba(255,0,255)]
-                          "
-              src={'/profile.jpeg'}
-              alt="me"
-              width="150"
-              height="150"
-            />
-          </div>
-          <p className="text-5xl font-bold">Harsh Tiwari</p>
-          <p className="text-xl">Software Engineer</p>
-          <a className="text-2xl font-semibold" href="/"></a>
-        </div>
+    <nav
+      className=" 
+    bg-[#96031A] px-2 sm:px-4 py-2.5 m-5 dark:bg-gray-900 fixed w-[95%] z-20 top-0 border-b dark:border-gray-600 border-black shadow-[10px_10px_0px_0px_rgba(255,191,0)]"
+    >
+      <div className="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="https://flowbite.com/" className="flex items-center">
+          <span className="self-center text-5xl font-semibold text-white whitespace-nowrap">
+            H.T
+          </span>
+        </a>
 
-        <div className="flex flex-col pt-5 my-16 spacing">
-          <ul className="space-y-10 text-gray-500 list-none list-inside dark:text-gray-400">
+        <div
+          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul className="flex flex-row">
             {navItems.map((nav) => {
               return (
                 <li key={nav.url}>
@@ -40,7 +34,7 @@ export default function NavBar() {
             })}
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

@@ -1,8 +1,8 @@
 import NavBar from '@/components/nav/navbar';
+import SideBar from '@/components/nav/sidebar';
 import { Space_Mono } from '@next/font/google';
 import './globals.css';
-import styles from './page.module.css';
-export const spaceMono = Space_Mono({
+const spaceMono = Space_Mono({
   weight: '400',
   subsets: ['latin'],
 });
@@ -19,13 +19,18 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <div className="bg-black">
-          <div className={`grid grid-cols-12 gap-10 ${spaceMono.className}`}>
-            <div className="relative col-span-3">
+        <div className={`bg-black ${spaceMono.className}`}>
+          <div className={`flex h-screen`}>
+            <div className="block xl:hidden">
               <NavBar />
             </div>
+            <aside className="sticky top-0 hidden h-screen xl:block">
+              <SideBar />
+            </aside>
             <div
-              className={`container flex flex-col col-span-9 px-10 ${styles.main}`}
+              className={`pt-32 xl:pt-5 w-screen flex-1 p-10 text-2xl font-bold 
+              scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-black overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full
+              `}
             >
               {children}
             </div>
