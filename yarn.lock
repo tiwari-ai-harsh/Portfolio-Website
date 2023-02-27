@@ -357,6 +357,18 @@
   resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+"@types/three@^0.149.0":
+  version "0.149.0"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.149.0.tgz#f48c03ffcf35b2d196f3532b51bc845e96f6090e"
+  integrity sha512-fgNBm9LWc65ER/W0cvoXdC0iMy7Ke9e2CONmEr6Jt8sDSY3sw4DgOubZfmdZ747dkPhbQrgRQAWwDEr2S/7IEg==
+  dependencies:
+    "@types/webxr" "*"
+
+"@types/webxr@*":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.1.tgz#4908349419104bd476a4252d04e4c3abb496748d"
+  integrity sha512-xlFXPfgJR5vIuDefhaHuUM9uUgvPaXB6GKdXy2gdEh8gBWQZ2ul24AJz3foUd8NNKlSTQuWYJpCb1/pL81m1KQ==
+
 "@typescript-eslint/parser@^5.42.0":
   version "5.51.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.51.0.tgz"
@@ -2502,6 +2514,11 @@ tailwindcss@^3.2.6:
     postcss-value-parser "^4.2.0"
     quick-lru "^5.1.1"
     resolve "^1.22.1"
+
+taos@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/taos/-/taos-1.0.2.tgz#a18405b29061ed9526c0bcf978bd6c29ca5a3dd2"
+  integrity sha512-wji577+Do1rKf3EMywQFbzvkGCip0v+MjDVkOaNCtqvufmXIBBoQYJbyk3RTQNr3JhDD4ECYUOX4vMCViS/8Og==
 
 tapable@^2.2.0:
   version "2.2.1"

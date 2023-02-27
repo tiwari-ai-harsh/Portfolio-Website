@@ -1,4 +1,5 @@
 'use client';
+import CardWrapper from '@/components/common/cardWrapper';
 import { Inter } from '@next/font/google';
 import { motion } from 'framer-motion';
 
@@ -16,10 +17,9 @@ export default function BlogPage() {
         damping: 20,
       }}
     >
-      <h1 className="text-3xl font-bold underline bg-red-50">
-        {' '}
-        Hello Blog Page
-      </h1>
+      <CardWrapper heading="Blogs:">
+        My blogs will appear here. (When I'll eventually write some :/)
+      </CardWrapper>
     </motion.div>
   );
 }

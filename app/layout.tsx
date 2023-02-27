@@ -19,7 +19,8 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <div className={`bg-black ${spaceMono.className}`}>
+        <div className={`bg-black ${spaceMono.className} `}>
+          {/* <Scene /> */}
           <div className={`flex h-screen`}>
             <div className="block xl:hidden">
               <NavBar />

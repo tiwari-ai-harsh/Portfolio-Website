@@ -12,13 +12,20 @@ export default function NavLink({
   return (
     <Link
       href={to}
-      className={`mx-4 text-3xl font-semibold  ${
-        active
-          ? 'xl:text-[rgba(255,0,255)] text-white underline decoration-black '
-          : 'text-black'
-      }`}
+      className={`mx-4 text-3xl font-semibold transition-all duration-300 ease-in-out group`}
     >
-      {children}
+      <span
+        className={`bg-left-bottom bg-gradient-to-r from-pink-500 to-red-400 bg-[length:0%_2px] bg-no-repeat ${
+          active
+            ? `bg-[length:100%_5px] font-bold xl:text-black text-white`
+            : 'xl:text-gray-400 text-black'
+        } transition-all duration-500 ease-out`}
+      >
+        {children}
+      </span>
+
+      {/* <div className="transition duration-300 ">{children}</div>
+      <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span> */}
     </Link>
   );
 }
