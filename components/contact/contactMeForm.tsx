@@ -5,7 +5,10 @@ export default function ContactMeForm() {
     <CardWrapper heading="Contact Me:">
       <div className="mt-5 text-2xl text-black md:text-4xl indent-5">
         You can reach me at{' '}
-        <a href="mailto:tiwari.ai.harsh@gmail.com" className="underline">
+        <a
+          href="mailto:tiwari.ai.harsh@gmail.com"
+          className="flex-wrap underline"
+        >
           tiwari.ai.harsh@gmail.com
         </a>
         . We can also connect over on{' '}

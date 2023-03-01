@@ -9,9 +9,9 @@ export default function NavBar() {
   return (
     <nav
       className=" 
-     bg-[#15acb1] px-2 sm:px-4 py-2.5 w-full md:m-5 my-5
+     bg-[#FFEBB7] px-2 sm:px-4 py-2.5 w-full md:m-5 my-5
      dark:bg-gray-900 fixed md:w-[95%] z-20 top-0 border-b
-     dark:border-gray-600 border-black shadow-[10px_10px_0px_0px_rgba(255,191,0)]"
+     dark:border-gray-600 border-black shadow-[10px_10px_0px_0px_rgba(255,110,49)]"
     >
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" className="flex items-center">
