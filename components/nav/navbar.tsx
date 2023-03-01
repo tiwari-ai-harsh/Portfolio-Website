@@ -15,7 +15,7 @@ export default function NavBar() {
     >
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" className="flex items-center">
-          <span className="self-center hidden text-5xl font-semibold text-white md:block whitespace-nowrap">
+          <span className="self-center hidden text-5xl font-semibold text-black md:block whitespace-nowrap">
             H.T
           </span>
         </a>
