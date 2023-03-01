@@ -3,9 +3,9 @@ import CardWrapper from '../common/cardWrapper';
 export default function Interests() {
   return (
     <CardWrapper heading="Interests: ">
-      <div className="grid grid-cols-2 mt-5 text-4xl capitalize indent-5">
+      <div className="grid grid-cols-2 mt-5 text-4xl text-black capitalize indent-5">
         <div>
-          <div className="font-semibold text-black capitalize">Technology:</div>
+          <div className="font-semibold capitalize">Technology:</div>
           <div className="col-auto ml-4 gird">
             <p>Rust</p>
             <p>Postgres</p>
@@ -16,9 +16,7 @@ export default function Interests() {
           </div>
         </div>
         <div>
-          <div className="font-semibold text-black capitalize">
-            Miscellaneous:
-          </div>
+          <div className="font-semibold capitalize">Miscellaneous:</div>
           <div className="col-auto ml-4 gird">
             <p>Guitar</p>
             <p>Running</p>

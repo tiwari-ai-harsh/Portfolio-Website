@@ -3,7 +3,7 @@ import CardWrapper from '../common/cardWrapper';
 export default function AboutMe() {
   return (
     <CardWrapper heading="About:">
-      <div className="mt-5 text-4xl capitalize indent-5">
+      <div className="mt-5 text-4xl text-black capitalize indent-5">
         <p>
           Hi, I'm a full stack software engineer working at a fintech startup
           Castler. I primarily work with technologies like Mongo DB, Node JS,

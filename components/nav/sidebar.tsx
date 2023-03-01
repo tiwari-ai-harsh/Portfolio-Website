@@ -22,9 +22,8 @@ export default function SideBar() {
               height="150"
             />
           </div>
-          <p className="text-5xl font-bold">Harsh Tiwari</p>
-          <p className="text-xl">Software Engineer</p>
-          <a className="text-2xl font-semibold" href="/"></a>
+          <p className="text-5xl font-bold text-black">Harsh Tiwari</p>
+          <p className="text-xl text-black">Software Engineer</p>
         </div>
 
         <div className="flex flex-col pt-5 my-16 spacing">

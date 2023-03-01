@@ -18,7 +18,9 @@ export default function BlogPage() {
       }}
     >
       <CardWrapper heading="Blogs:">
-        My blogs will appear here. (When I'll eventually write some :/)
+        <div className="text-black">
+          My blogs will appear here. (When I'll eventually write some :/)
+        </div>
       </CardWrapper>
     </motion.div>
   );
