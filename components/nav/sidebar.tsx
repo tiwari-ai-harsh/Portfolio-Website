@@ -8,13 +8,13 @@ export default function SideBar() {
   const pathName = usePathname();
 
   return (
-    <div className="h-[95vh] w-128 m-5 border-2 bg-white border-black shadow-[10px_10px_0px_0px_rgba(109,40,217)] ">
+    <div className="h-[95vh] w-128 m-5 border-2 bg-white border-black shadow-[10px_10px_0px_0px_rgba(255,110,49)] ">
       <nav className="flex flex-col lg:p-10 text-end">
         <div className="">
           <div className="flex flex-row justify-end">
             <Image
               className="my-5 mb-10 justify-self-end border-4
-              border-black shadow-[10px_10px_0px_0px_rgba(255,0,255)]
+              border-black shadow-[10px_10px_0px_0px_rgba(173,142,112)]
                           "
               src={'/profile.jpeg'}
               alt="me"

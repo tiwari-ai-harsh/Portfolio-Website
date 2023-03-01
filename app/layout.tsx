@@ -29,7 +29,7 @@ export default function RootLayout({
               <SideBar />
             </aside>
             <div
-              className={`pt-32 xl:pt-5 w-screen flex-1 p-10 text-2xl font-bold 
+              className={`pt-32 xl:pt-5 w-screen flex-1 px-0 md:px-10 text-2xl font-bold 
               scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-black overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full
               `}
             >

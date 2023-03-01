@@ -23,22 +23,6 @@ export default function NavLink({
       >
         {children}
       </span>
-
-      {/* <div className="transition duration-300 ">{children}</div>
-      <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span> */}
     </Link>
   );
 }
-
-// export default function NavLink({
-//   to,
-//   active,
-//   children,
-// }: {
-//   to: string;
-//   active: boolean;
-//   children: string;
-// }) {
-//   return (
-//   );
-// }
