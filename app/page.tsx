@@ -7,8 +7,7 @@ import { motion } from 'framer-motion';
 export default function Home() {
   return (
     <div>
-      {/* <Scene /> */}
-      <motion.div
+      <motion.ul
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 300, opacity: 0 }}
@@ -18,10 +17,16 @@ export default function Home() {
           damping: 20,
         }}
       >
-        <AboutMe />
-        <Interests />
-        <MeLinks />
-      </motion.div>
+        <motion.li>
+          <AboutMe />
+        </motion.li>
+        <motion.li>
+          <Interests />
+        </motion.li>
+        <motion.li>
+          <MeLinks />
+        </motion.li>
+      </motion.ul>
     </div>
   );
 }
