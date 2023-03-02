@@ -7,7 +7,7 @@ export default function ContactMeForm() {
         You can reach me at{' '}
         <a
           href="mailto:tiwari.ai.harsh@gmail.com"
-          className="flex-wrap underline"
+          className="flex-wrap underline break-words"
         >
           tiwari.ai.harsh@gmail.com
         </a>
