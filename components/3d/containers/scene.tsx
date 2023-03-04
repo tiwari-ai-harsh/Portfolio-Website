@@ -11,12 +11,12 @@ import ModelLoader from './loader';
 
 export default function Scene() {
   return (
-    <div className="h-96">
+    <div className="self-center w-full h-96">
       <Canvas
-        // className="p-10 m-6"
-        shadows
+        className="bg-[#000]"
+        shadows={true}
         dpr={[1, 2]}
-        camera={{ position: [1, 0, 1], fov: 70 }}
+        camera={{ position: [-6, 7, 7], fov: 70 }}
         // resize={{ offsetSize: true }}
       >
         <ambientLight intensity={0.7} />
