@@ -17,7 +17,7 @@ export default function Scene() {
         shadows={true}
         dpr={[1, 2]}
         camera={{ position: [-6, 7, 7], fov: 70 }}
-        // resize={{ offsetSize: true }}
+        resize={{ offsetSize: true }}
       >
         <ambientLight intensity={0.7} />
         <spotLight
