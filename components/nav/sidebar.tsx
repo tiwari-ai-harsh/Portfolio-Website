@@ -1,6 +1,7 @@
 'use client';
 import { navItems } from '@/constants/navItems';
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import NavLink from './navLink';
 
@@ -12,15 +13,17 @@ export default function SideBar() {
       <nav className="flex flex-col lg:p-10 text-end">
         <div className="">
           <div className="flex flex-row justify-end">
-            <Image
-              className="my-5 mb-10 justify-self-end border-4
+            <Link href={'/'}>
+              <Image
+                className="my-5 mb-10 justify-self-end border-4
               border-black shadow-[10px_10px_0px_0px_rgba(173,142,112)]
                           "
-              src={'/profile.jpeg'}
-              alt="me"
-              width="150"
-              height="150"
-            />
+                src={'/profile.jpeg'}
+                alt="me"
+                width="150"
+                height="150"
+              />
+            </Link>
           </div>
           <p className="text-5xl font-bold text-black">Harsh Tiwari</p>
           <p className="text-xl text-black">Software Engineer</p>
