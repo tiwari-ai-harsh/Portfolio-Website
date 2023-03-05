@@ -1,5 +1,6 @@
 'use client';
 import { navItems } from '@/constants/navItems';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import NavLink from './navLink';
 
@@ -14,11 +15,9 @@ export default function NavBar() {
       border-black shadow-[10px_10px_0px_0px_rgba(255,110,49)]"
     >
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <span className="self-center hidden text-5xl font-semibold text-black md:block whitespace-nowrap">
-            H.T
-          </span>
-        </a>
+        <span className="self-center hidden text-5xl font-semibold text-black md:block whitespace-nowrap">
+          <Link href={'/'}>H.T</Link>
+        </span>
 
         <div
           className="items-center justify-between w-full md:flex md:w-auto md:order-1"
