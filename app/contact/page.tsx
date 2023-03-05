@@ -17,7 +17,7 @@ export default function ContactPage() {
         damping: 20,
       }}
     >
-      <ContactMeForm />;
+      <ContactMeForm />
     </motion.div>
   );
 }
